@@ -1,0 +1,194 @@
+/* Modal Overlay */
+.item-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Container */
+.additem-modal-container {
+  background: var(--surface-color);
+  width: 90%;
+  height: 100%;
+  max-width: 500px;
+  padding:1px 20px !important;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.additem-modal-header {
+  display: flex;
+  /* height: auto;
+  width: 100%; */
+  background-color: var(--header-bg-color);
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding:  16px;
+  margin-bottom: 10px;
+}
+
+.additem-modal-header h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+  
+}
+.close img{
+  height: 2rem;
+  width: 2rem;
+
+}
+
+/* Search Input */
+.search-input {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: large;
+  background-color: var(--surface-color2);
+  color: var(--text-primary);
+}
+
+/* Item List */
+.item-list {
+  
+   flex-grow: 1;
+  min-height: 100px;
+  max-height: calc(100vh - 350px); /* adjust to fit remaining content */
+  overflow-y: auto;
+  padding: 5px 10px;
+  border-radius: 6px;
+  
+}
+
+/* Individual Item */
+.item {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin: 10px 0;
+
+}
+.item input[type="checkbox"] {
+    height: 18px;
+    width: 18px;
+}
+/* Checkbox & Label */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+/* Quantity and Price Row */
+.input-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding: 6px;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+/* Quantity Input */
+.qty-input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+  color: #000;
+}
+
+/* Price Label */
+.price-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.amount-paid{
+    margin-top: 10px;
+    font-weight: bold;
+    color: var(--primary-500);
+    /* text-align: right; */
+}
+.amount-paid input {
+  width: 100%;
+  padding: 1rem;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: var(--surface-color2);
+  font-size: large;
+   color: var(--text-primary);
+}
+
+.item-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+/* Submit Button */
+.submit-btn {
+  flex: 3;
+  background: #ffe6e6;
+  color: #ff4d4d;
+  border: 1px solid #ff4d4d;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.submit-btn:hover{
+  background: #ffcccc; 
+}
+.print-btn{
+  flex: 1;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.print-btn img{
+  width: 22px;
+  height: 22px;
+  margin: auto;
+}
+.print-btn:hover{
+  background: #218838; 
+}
+
+
+
+
+
+
+

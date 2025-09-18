@@ -1,0 +1,212 @@
+.settings-container{
+ display: grid;
+  gap: 7px;
+  height: 100vh;
+  width: 100%;
+}
+.more{
+  background-color: var(--surface-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.setting-header{
+  background-color: var(--header-bg-color);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.setting-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.8rem;
+  border: 1px solid var(--border-color);
+}
+.setting-div:hover{
+  background-color: var(--hover-bg-color);
+}
+
+.theme{
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+}
+.theme img{
+  width: 25px;
+  height: 25px;
+
+}
+.right{
+  width: 18px;
+  height: 18px;
+}
+.theme h3{
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.setting-active {
+  /* color: var(--active-color); */
+  filter: invert(42%) sepia(64%) saturate(2264%) hue-rotate(96deg) brightness(93%) contrast(86%);
+}
+.setting{
+  background-color: var(--surface-color);
+  
+}
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.language-modal {
+  background: var(--surface-color2);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  min-width: 300px;
+  text-align: center;
+}
+
+.language-modal button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--btn-bg-color);
+  color: var(--text);
+  
+}
+
+.language-modal button:hover {
+  background: #27AE60;
+  color: white;
+}
+
+.close-modal {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Logout Modal Styles */
+.logout-modal {
+  background: var(--surface-color2);
+  padding: 2rem;
+  border-radius: 8px;
+  position: relative;
+  min-width: 300px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.logout-modal h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.logout-modal p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.confirm-btn, .cancel-btn {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.confirm-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.confirm-btn:hover {
+  background: #c0392b;
+}
+
+.cancel-btn {
+  background: var(--btn-bg-color);
+  color: var(--text-primary);
+}
+
+.cancel-btn:hover {
+  background: #ddd;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .more {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .setting-div {
+    padding: 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .theme img, .right {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme h3 {
+    font-size: 1rem;
+  }
+
+  /* Modal adjustments */
+  .language-modal, .logout-modal {
+    width: 50%;
+    min-width: unset;
+    padding: 1.5rem;
+  }
+
+  .close-modal {
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 5px;
+  }
+
+  /* .modal-buttons {
+    flex-direction: column;
+  } */
+
+  .confirm-btn, .cancel-btn {
+    /* width: 100%; */
+    padding: 0.6rem;
+  }
+}

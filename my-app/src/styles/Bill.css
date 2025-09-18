@@ -1,0 +1,24 @@
+/* Bill.css */
+.bill-container {
+  padding: 20px;
+}
+
+.bill-container h2 {
+  margin-bottom: 10px;
+}
+
+.bill-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bill-container th, .bill-container td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.bill-summary {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+

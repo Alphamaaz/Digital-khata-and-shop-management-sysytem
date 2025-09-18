@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+  gap: 7px;
+  height: 100vh;
+        
+  overflow: hidden;
+}
+
+.grid-container > * {
+  overflow-y: auto;
+  height: 100%;
+}

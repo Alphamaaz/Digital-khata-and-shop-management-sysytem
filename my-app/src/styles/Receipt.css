@@ -1,0 +1,59 @@
+/* Receipt.css */
+.receipt-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin: 0 auto;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.receipt-header h2 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.receipt-header p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.receipt-body {
+  margin-bottom: 20px;
+}
+
+.receipt-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receipt-table th,
+.receipt-table td {
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.receipt-footer {
+  text-align: right;
+  font-size: 14px;
+}
+
+.receipt-footer p {
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+.payment-info {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+}

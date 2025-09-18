@@ -1,0 +1,115 @@
+.customer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  overflow-y: auto;
+  cursor: pointer;
+  padding: 1.2rem;
+  margin: 0.5rem 0;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.customer-container:hover {
+  background-color: #f9f9f9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.customer-active{
+  background-color: var(--active-color)  ;
+}
+/* Grouping avatar and details together */
+.customer-main {
+  display: flex;
+  align-items: center;
+}
+
+/* Avatar styling */
+.customer-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.customer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* Customer details container */
+.customer-details {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header containing name and role */
+.customer-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.customer-name {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #333;
+  max-width: 100%;
+}
+
+.customer-role {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #e74c3c;
+  padding: 2px 6px;
+  border: 1px solid #e74c3c;
+  border-radius: 20px;
+}
+
+/* Timestamp is placed below the header */
+.customer-timestamp {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 4px; /* Small gap below header */
+  text-align: left; /* Align timestamp to start */
+  display: block;
+}
+
+/* Amount styling */
+.customer-amount {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #28a745;
+}
+.customer-container:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+}
+ @media (max-width: 768px) {
+
+.customer-amount{
+  font-size: 1rem;
+}
+.customer-role{
+  font-size: 0.6rem;
+}
+ }
